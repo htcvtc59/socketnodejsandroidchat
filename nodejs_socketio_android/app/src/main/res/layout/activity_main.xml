@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.os.nodejs_socketio_android.MainActivity">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <EditText
+            android:layout_marginLeft="4dp"
+            android:id="@+id/editTextUserName"
+            android:hint="Input username here"
+            android:layout_weight="8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:background="@null"
+            android:id="@+id/imgbuttonAdd"
+            android:src="@android:drawable/ic_input_add"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_weight="1"
+        android:visibility="invisible"
+        android:id="@+id/main_btn_add_room"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_create_rooms"
+        android:src="@android:drawable/ic_input_add" />
+
+    <ListView
+        android:layout_weight="2"
+        android:id="@+id/list_item_user_online"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </ListView>
+
+    <ListView
+        android:layout_weight="6"
+        android:id="@+id/list_item_rooms"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </ListView>
+
+
+</LinearLayout>

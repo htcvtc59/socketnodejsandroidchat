@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.os.nodejs_socketio_android.RoomsActivity"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <ListView
+        android:id="@+id/listviewUser"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </ListView>
+
+    <TextView
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:text="Content chat:"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <ListView
+        android:id="@+id/listviewChat"
+        android:layout_weight="6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:stackFromBottom="true"></ListView>
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <EditText
+            android:layout_marginLeft="4dp"
+            android:id="@+id/editTextContent"
+            android:hint="Input here"
+            android:layout_weight="9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:background="@null"
+            android:id="@+id/imgbuttonSend"
+            android:src="@android:drawable/ic_menu_send"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

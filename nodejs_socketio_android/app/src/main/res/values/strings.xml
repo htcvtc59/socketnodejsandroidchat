@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">appchat</string>
+    <string name="room_name">Room name</string>
+    <string name="room_button_create">Create room</string>
+    <string name="room_button_cancel">Cancel</string>
+    <string name="main_btn_name_create">Create Room</string>
+
+    <string-array name="list_name_birds">
+        <item>bird1</item>
+        <item>bird2</item>
+        <item>bird3</item>
+        <item>bird4</item>
+        <item>bird5</item>
+        <item>bird6</item>
+        <item>bird7</item>
+        <item>bird8</item>
+    </string-array>
+
+</resources>

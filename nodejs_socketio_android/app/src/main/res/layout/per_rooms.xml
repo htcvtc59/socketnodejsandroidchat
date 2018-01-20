@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgRoomDis"
+        android:src="@mipmap/bird1"
+        android:layout_margin="10dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:id="@+id/txtNameRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgRoomDis"
+        android:layout_marginTop="20dp"
+        android:text="Rooms"
+        android:textColor="@color/colorButtonCreate"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtidRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgRoomDis"
+        android:layout_below="@id/txtNameRoom"
+        android:layout_marginTop="10dp"
+        android:text="ID Rooms"
+        android:textColor="@color/colorButtonCreate"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:src="@android:drawable/ic_media_play"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
